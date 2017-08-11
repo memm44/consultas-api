@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Pagina Principal {% endblock %}
+{% block content %}
+<br><br>
+<div class="container"> 
+<h3>Ingrese el numero de la pregunta que desea calcular: </h3>
+<ul>
+        <li>1.Cual es el publicador que tiene mas libros y cuantos son?</li>
+        <li>2.Cual es el libro mejor clasificado? </li>
+        <li>3.Cual de los libros de jquery es el peor rankeado?</li>
+        <li>4.Cuantos publicadores tienen menos de dos libros?</li>
+        <li>5.Cual es el libro mas barato? </li>
+        <li>6.Cual es el libro mas caro? </li>
+        <li>7.Cual tienda tiene mas libros? </li>
+        <li>8.Cual es el precio total de todos los libros jquery?</li>
+        <li>9.Cual es el peor publicador?</li>
+        <li>10.Que publicador ha ganado mas premios?</li>
+</ul>
+
+   
+
+    <h3>resultado de la consulta es: <br> {{consulta}}</h3>
+    <h2 id= "cons2"></h2>
+
+</div>
+<div id ="respuesta"></div>
+<div id ="muestra"></div>
+
+{% block javascript %}
+        <!--<script type="text/javascript" src="{% static 'js/ajax.js' %}">
+        </script>-->
+    
+{% endblock %}
+{% endblock %}
+{% include "footer.html" %}
+
