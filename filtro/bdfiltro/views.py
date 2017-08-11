@@ -6,6 +6,7 @@ from django.db.models import Avg,Max,Min,Count,Sum
 class Inicio(View):
     template_name = "index.html"
     consulta = Publicador.objects.annotate(x=Count("libro")).filter(x__lte=2)
+    hola="xD"
 
 
     def get(self,request,**kwargs):
